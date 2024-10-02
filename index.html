@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Главная</h1>
+        <h1>Hey,</h1>
+        <h1 id="username"></h1>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        let tg = window.Telegram.WebApp;
+        let name = document.getElementById("username");
+        document.getElementById("username").value = tg.initDataUnsafe.username
+    </script>
+</body>
+</html>
